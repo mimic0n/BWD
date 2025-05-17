@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Cộng Đồng</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/headerfooter.css" rel="stylesheet">
+  <link href = "css/button.css" rel = "stylesheet" >
+  <link href="css/animation.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="containerfe navbar">
+            <div class="logo">
+                <a href="index.html">B4E</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="borrow.html">Mượn sách</a></li>
+                <li><a href="donate.html">Quyên góp</a></li>
+                <li><a href="books.html">Danh mục sách</a></li>
+                <li><a href="about.html">Giới thiệu</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Đăng nhập</a>
+                <a href="register.html" class="btn">Đăng ký</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero hero-section">
+        <div class="container">
+            <h1 style = "color: #f7f9fc" >OOPS - Trang không hỗ trợ ngay lúc này</h1>
+            <p>Chúng tôi đang cố gắng phát triển tính năng này, mời bạn quay lại sau. Xin cảm ơn!</p>
+        </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>B4E</h3>
+          <ul>
+            <li><a href="#intro">Giới thiệu</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Sự kiện</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Dịch vụ</h3>
+          <ul>
+            <li><a href="borrow.html">Mượn sách</a></li>
+            <li><a href="donate.html">Quyên góp</a></li>
+            <li><a href="borrow.html">Đọc tại chỗ</a></li>
+            <li><a href="donate.html">Hoạt động cộng đồng</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Hỗ trợ</h3>
+          <ul>
+            <li><a href="questionsyoumayhave.html">Câu hỏi thường gặp</a></li>
+            <li><a href="questionsyoumayhave.html#huongdanmuonsach">Hướng dẫn mượn sách</a></li>
+            <li><a href="questionsyoumayhave.html">Quy định thư viện</a></li>
+            <li><a href="about.html">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Theo dõi chúng tôi</h3>
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter/X</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 B4E. Tất cả các quyền được bảo lưu.
+      </div>
+    </footer>
+    <button id="backToTop" class="back-to-top">↑</button>
+    <script>
+      const backToTopButton = document.getElementById('backToTop');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      });
+
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+</body>
+</html>
